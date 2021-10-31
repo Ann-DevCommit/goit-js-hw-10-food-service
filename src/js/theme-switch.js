@@ -9,7 +9,7 @@ const themeBody = document.querySelector('body')
 
 
 // Установка темы при обновлении страницы
-// (localStorage = Theme.LIGHT / Theme.DARK; localStorage = null; localStorage = чтоугодно)
+// (localStorage = Theme.LIGHT / Theme.DARK; localStorage = null; localStorage = любые другие значения)
 
 const watchLocalStorage = localStorage.getItem('currentTheme');
     
