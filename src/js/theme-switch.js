@@ -18,7 +18,7 @@ if (watchLocalStorage === Theme.LIGHT || Theme.DARK) {
         themeBody.classList.remove(Theme.DARK)
     } else {themeBody.classList.remove(Theme.LIGHT)}
 
-    themeBody.classList.add(watchLocalStorage) 
+    themeBody.classList.add(watchLocalStorage)
 }
 
 if (watchLocalStorage === null) {
@@ -40,6 +40,13 @@ if (watchLocalStorage !== null) {
             themeSwitchToggleEl.checked = false;}
         }  
 }
+
+if (themeBody.classList.contains(Theme.DARK)) {
+        themeSwitchToggleEl.setAttribute('checked', true)
+} else {
+        themeSwitchToggleEl.removeAttribute('checked')
+}
+
     
 // Переключатель темы
 
